@@ -11,6 +11,7 @@ const initState = {
 }
 export const AddHouse = () => {
   const [data,setData] = React.useState(initState);
+  const [detail,setDetail] = React.useState([]);
 
   const handleChage = (e) =>{
     const {name,value} = e.target;
@@ -19,6 +20,8 @@ export const AddHouse = () => {
   const handleClick = () =>{
     console.log(data)
   }
+  
+
   const {name,ownerName,address,areaCode,rent,bachelor,married,image} = data
   return (
     <div className="addHouseContainer">
